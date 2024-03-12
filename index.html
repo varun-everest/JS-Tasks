@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Dom Manipulation</title>
+    
+</head>
+<body>
+    <div class="card">
+        <nav class="navbar"> 
+            <button class="navbar-toggler" onclick="toggleNavbar()">☰</button> 
+                <p id="section" class="nav-item">Section</p>         
+                <p id="form" class="nav-item">Form</p>
+                <p id="game" class="nav-item">Game</p>  
+                <p id="list" class="nav-item">List</p>   
+                <p id="objects" class="nav-item">Person</p>                  
+        </nav>
+        <div class="tab section" id="section-division">
+            <div class="section-div">
+               <div class="sub">
+                   <h3> DesertX</h3>
+                   <p>DesertX presented a completely new challenge to the Centro Stile. The opportunity to experiment with a new design language, seeking inspiration in the history of African Rally.
+                    The result is a solid, clean, modern design, based on shapes taken from the off-road world. It is a bike that wants to be solid and functional at the same time. </p>
+               </div>
+               <div class="sub">
+                   <h3> RD 350</h3>
+                   <p>The RD350 is a two-stroke motorcycle produced by Yamaha from 1973 to 1975.[2] It evolved directly from the piston port (pre-reed valve intake tract), front drum-braked, five-speed Yamaha 350 cc "R5". The engine is an air-cooled, parallel twin, six-speed (in some markets, such as the UK, the first model was sold in five-speed form), reed valve-equipped intake tract two-stroke engine. The bike is usually referred to as a sport bike. </p>
+               </div>
+               <div class="sub">
+                   <h3> RX 100</h3>
+                   <p>The RX100 designation was originally used in certain markets for the five-speed, short-stroke 97cc Yamaha RS100DX produced from 1977. This was an RS100 (itself a 1976 improvement upon the design of the original reed-valved 96cc RS100 that was introduced to the United Kingdom in September, 1974, and to the USA in November, 1974)[1][2] with a front disc brake and a tachometer, and was replaced in 1983 with the square-stroke, 98cc RX-S (with part numbers coded 31J),[3] a major update on the RS design (with substantial changes particularly to the cylinder, head, and induction, and the points ignition replaced by Yamaha Capacitor Discharge Ignition) which was to form the basis of the Escort-distributed variants including the EY-100 Escort Yamaha 100.</p>
+               </div>
+           </div>   
+       </div>
+        <div class="tab div-s" id="form-division">
+            <div>
+                <form action="" method="post" id="formsubmit" >
+                    <label class="font" for="name">UserName:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label class="font" for="email">Password:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                    <input type="submit" id="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+             <br><br>
+             <div id="submit-form"></div>
+        </div>
+     
+        <div class="tab" id="game-division">
+            <div class="div-game">
+               <div class="btn-count1">
+                <button type="button" class="btn2" id="time">00</button>
+               </div>
+                <div class="btn-count2">
+                    <button class="btn1" onclick="start()" id="s">Start</button>
+                    <button class="btn1" onclick="pause()" id="p" disabled>Pause</button>
+                    <button class="btn1" onclick="reset()" id="r" disabled>Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab list" id="list-division">
+            <div>
+                <table id="data-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="data-body">
+                        </tbody>
+                </table> 
+            </div>           
+        </div>
+        <div class="tab objects" id="objects-division">
+             <div>
+                <h3 class="heading">Data</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Place</th>
+                            <th>Email</th>
+                        </tr>
+                        <tbody id="data-obj"></tbody>
+                    </thead>
+                </table>
+             </div>
+        </div>
+    </div>   
+    </body>  
+    <script type = "text/JavaScript" src="./script.js"></script>
+</html>
